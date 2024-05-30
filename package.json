@@ -31,5 +31,25 @@
     "eslint-plugin-react-refresh": "^0.4.6",
     "tailwindcss": "^3.4.3",
     "vite": "^5.2.0"
-  }
+  },
+  "description": "My 3D web portfolio.",
+  "main": "App.jsx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonardo-collazo/3d-web-portfolio.git"
+  },
+  "keywords": [
+    "react",
+    "vite",
+    "tailwindcss",
+    "3d",
+    "web",
+    "portfolio"
+  ],
+  "author": "Leonardo Collazo Klenina <leonardo.collazo.klenina@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leonardo-collazo/3d-web-portfolio/issues"
+  },
+  "homepage": "https://github.com/leonardo-collazo/3d-web-portfolio#readme"
 }
