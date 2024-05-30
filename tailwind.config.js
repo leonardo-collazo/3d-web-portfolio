@@ -21,6 +21,12 @@ module.exports = {
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
       },
+      height: {
+        navbar: "80px",
+      },
+      padding: {
+        navbar: "80px",
+      },
     },
   },
   plugins: [],
