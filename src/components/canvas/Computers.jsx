@@ -1,25 +1,59 @@
-import { Suspense, useEffect, useState } from "react";
+import { Suspense } from "react";
 
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
-import CanvasLoader from "../Loader";
+import { Loader } from "../Loader";
 
 const Computers = () => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
 
+  const scales = [
+    [1024, 1],
+    [768, 0.768],
+    [640, 0.64],
+    [560, 0.56],
+    [489, 0.489],
+    [450, 0.45],
+    [425, 0.425],
+    [375, 0.375],
+    [320, 0.32],
+  ];
+
+  const positions = [
+    [1024, [0, -4.2, -1.4]],
+    [768, [0, -3.75, -1.25]],
+    [640, [0, -3.5, -1.1]],
+    [560, [0, -3, -0.95]],
+    [489, [0, -3, -0.78]],
+    [450, [0, -3, -0.75]],
+    [425, [0, -2.75, -0.725]],
+    [375, [0, -2.75, -0.6]],
+    [320, [0, -2.75, -0.45]],
+  ];
+
+  const computerScale = scales.find(pair => window.innerWidth >= pair[0])[1];
+  const computerPosition = positions.find(pair => window.innerWidth >= pair[0])[1];
+
   return (
     <mesh>
       <hemisphereLight
-        intensity={1.5}
+        intensity={0.75}
         groundColor="black"
       />
-      <pointLight intensity={2.5} />
+      <spotLight
+        position={[-18, 7.5, 8]}
+        angle={1}
+        penumbra={1}
+        intensity={100}
+        castShadow
+        shadow-mapSize={1024}
+      />
       <primitive
         object={computer.scene}
-        scale={0.75}
-        position={[0, -3, -1.5]}
-        rotation={[-0.01, -0.2, -0.1]}
+        scale={computerScale}
+        position={computerPosition}
+        rotation={[0, 0.25, -0.15]}
       />
     </mesh>
   );
@@ -30,10 +64,10 @@ const ComputersCanvas = () => {
     <Canvas
       frameloop="demand"
       shadows
-      camera={{ position: [20, 3, 5], fov: 25 }}
+      camera={{ position: [31, 0, 0], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
-      <Suspense fallback={<CanvasLoader />}>
+      <Suspense fallback={<Loader />}>
         <OrbitControls
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
