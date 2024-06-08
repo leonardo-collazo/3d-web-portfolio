@@ -62,6 +62,7 @@ const Computers = () => {
 const ComputersCanvas = () => {
   return (
     <Canvas
+      className="!touch-pan-y"
       frameloop="demand"
       shadows
       camera={{ position: [31, 0, 0], fov: 25 }}
