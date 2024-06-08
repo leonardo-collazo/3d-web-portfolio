@@ -38,7 +38,7 @@ const Computers = () => {
   return (
     <mesh>
       <hemisphereLight
-        intensity={0.75}
+        intensity={1}
         groundColor="black"
       />
       <spotLight
@@ -70,7 +70,7 @@ const ComputersCanvas = () => {
     >
       <Suspense fallback={<Loader />}>
         <OrbitControls
-          enableZoom={true}
+          enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
