@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { Suspense, useEffect, useState } from "react";
 
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
@@ -17,7 +17,7 @@ const Computers = () => {
     [450, 0.45],
     [425, 0.425],
     [375, 0.375],
-    [320, 0.32],
+    [0, 0.32],
   ];
 
   const positions = [
@@ -29,11 +29,32 @@ const Computers = () => {
     [450, [0, -2.75, -0.75]],
     [425, [0, -2.25, -0.725]],
     [375, [0, -2.25, -0.6]],
-    [320, [0, -2.25, -0.45]],
+    [0, [0, -2.25, -0.45]],
   ];
 
-  const computerScale = scales.find(pair => window.innerWidth >= pair[0])[1];
-  const computerPosition = positions.find(pair => window.innerWidth >= pair[0])[1];
+  const getComputerScale = () => scales.find(pair => window.innerWidth >= pair[0])[1];
+  const getComputerPosition = () => positions.find(pair => window.innerWidth >= pair[0])[1];
+
+  const [computerScale, setComputerScale] = useState(getComputerScale());
+  const [computerPosition, setComputerPosition] = useState(getComputerPosition());
+
+  const handleComputerScale = () => {
+    setComputerScale(getComputerScale());
+  };
+
+  const handleComputerPosition = () => {
+    setComputerPosition(getComputerPosition());
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleComputerScale);
+    window.addEventListener("resize", handleComputerPosition);
+
+    return () => {
+      window.removeEventListener("resize", handleComputerScale);
+      window.removeEventListener("resize", handleComputerPosition);
+    };
+  }, []);
 
   return (
     <mesh>
