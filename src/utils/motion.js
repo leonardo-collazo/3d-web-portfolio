@@ -17,10 +17,11 @@ export const textVariant = delay => {
 };
 
 export const fadeIn = (direction, type, delay, duration) => {
+  const position = getPosition(direction);
+
   return {
     hidden: {
-      x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
-      y: direction === "up" ? 100 : direction === "down" ? -100 : 0,
+      ...position,
       opacity: 0,
     },
     show: {
@@ -28,13 +29,38 @@ export const fadeIn = (direction, type, delay, duration) => {
       y: 0,
       opacity: 1,
       transition: {
-        type: type,
-        delay: delay,
-        duration: duration,
+        type,
+        delay,
+        duration,
         ease: "easeOut",
       },
     },
   };
+};
+
+const getPosition = direction => {
+  let x = 0;
+  let y = 0;
+
+  switch (direction) {
+    case "left":
+      x = 100;
+      break;
+
+    case "right":
+      x = -100;
+      break;
+
+    case "up":
+      y = 100;
+      break;
+
+    case "down":
+      y = -100;
+      break;
+  }
+
+  return { x, y };
 };
 
 export const zoomIn = (delay, duration) => {
