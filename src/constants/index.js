@@ -38,7 +38,17 @@ export const navLinks = [
 
 const services = [
   {
-    title: "User Interface (UI) Design and Development",
+    title: "Single Page Application (SPA) Development",
+    description:
+      "Create dynamic web applications that offer a desktop-like experience using frameworks such as React, Angular, Tailwind CSS and others",
+  },
+  {
+    title: "Development of Reusable Components",
+    description:
+      "Create reusable interface components that can be used in different parts of the application. Implement component libraries to improve development efficiency.",
+  },
+  {
+    title: "User Interface (UI) Development",
     description:
       "Create attractive and functional interfaces using HTML, CSS and JavaScript. Implement responsive designs to ensure applications work well on devices of different sizes and resolutions.",
   },
@@ -46,6 +56,11 @@ const services = [
     title: "User Experience (UX) Development",
     description:
       "Improve the user experience by implementing usability and accessibility principles. Conduct usability tests and make adjustments based on user feedback.",
+  },
+  {
+    title: "Animations and Interactive Effects",
+    description:
+      "Implement animations and interactive effects using CSS and JavaScript to enhance the user experience. Use libraries like Framer Motion or frameworks like Tailwind CSS for advanced animations.",
   },
   {
     title: "Integration with APIs and Back-End Services",
@@ -58,19 +73,9 @@ const services = [
       "Optimize the performance of web applications to ensure fast loading times and a smooth user experience. Implement optimization techniques such as lazy loading, file minification, and efficient resource usage.",
   },
   {
-    title: "Single Page Application (SPA) Development",
-    description:
-      "Create dynamic web applications that offer a desktop-like experience using frameworks such as React, Angular, Tailwind CSS and others",
-  },
-  {
     title: "Website Maintenance and Updates",
     description:
       "Perform regular maintenance and updates on existing websites to ensure proper functionality. Fix bugs and issues reported by users.",
-  },
-  {
-    title: "Development of Reusable Components",
-    description:
-      "Create reusable interface components that can be used in different parts of the application. Implement component libraries to improve development efficiency.",
   },
   {
     title: "Cross-Browser Compatibility",
@@ -80,12 +85,7 @@ const services = [
   {
     title: "Version Control Implementation",
     description:
-      "Use version control systems like Git to manage source code and collaborate with other developers. Maintain a history of changes and facilitate collaboration on projects.",
-  },
-  {
-    title: "Animations and Interactive Effects",
-    description:
-      "Implement animations and interactive effects using CSS and JavaScript to enhance the user experience. Use libraries like Framer Motion or frameworks like Tailwind CSS for advanced animations.",
+      "Use version control systems like Git and GitHub to manage source code and collaborate with other developers. Maintain a history of changes and facilitate collaboration on projects.",
   },
 ];
 
