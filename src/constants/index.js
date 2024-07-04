@@ -73,11 +73,6 @@ const services = [
       "Optimize the performance of web applications to ensure fast loading times and a smooth user experience. Implement optimization techniques such as lazy loading, file minification, and efficient resource usage.",
   },
   {
-    title: "Website Maintenance and Updates",
-    description:
-      "Perform regular maintenance and updates on existing websites to ensure proper functionality. Fix bugs and issues reported by users.",
-  },
-  {
     title: "Cross-Browser Compatibility",
     description:
       "Ensure applications work correctly across different browsers and versions. Conduct tests and make adjustments to handle browser discrepancies.",
