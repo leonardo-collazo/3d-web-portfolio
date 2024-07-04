@@ -7,7 +7,8 @@ const SectionWrapper = (Component, id) =>
   function HOC() {
     return (
       <motion.section
-        className="relative max-w-7xl mx-auto padding z-0"
+        className="relative max-w-7xl mx-auto px-6 sm:px-16 pt-28 z-0"
+        id={id}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.1 }}
