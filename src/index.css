@@ -4,6 +4,28 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .sectionHeadText {
+    @apply text-white font-black text-[40px] xs:text-[45px] sm:text-[50px] md:text-[55px] lg:text-[60px];
+  }
+
+  .sectionsubtext {
+    @apply text-[14px] sm:text-[18px] text-secondary uppercase tracking-wider;
+  }
+}
+
+@layer utilities {
+  .paddingX {
+    @apply sm:px-10 px-4;
+  }
+  .paddingY {
+    @apply sm:py-10 py-6;
+  }
+  .padding {
+    @apply sm:px-16 px-6 sm:py-16 py-10;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
