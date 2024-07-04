@@ -21,7 +21,13 @@ module.exports = {
         card: "0px 35px 120px -15px #211e35",
       },
       screens: {
-        xs: "450px",
+        xs: {
+          min: "450px",
+          max: "640px",
+        },
+        "2lg": {
+          min: "1200px",
+        },
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
