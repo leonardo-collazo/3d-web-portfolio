@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ServiceCard } from "./ServiceCard";
+import { SectionWrapper } from "./SectionWrapper";
 
-import { styles } from "../styles";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
@@ -10,7 +10,7 @@ const About = () => {
   return (
     <>
       <motion.h2
-        className={styles.sectionHeadText}
+        className="sectionHeadText"
         variants={textVariant()}
       >
         About
@@ -28,7 +28,7 @@ const About = () => {
         and development tools.
       </motion.p>
 
-      <div className="flex flex-wrap gap-10 mt-20">
+      <div className="flex flex-wrap justify-center 2lg:justify-start gap-10 mt-16">
         {services.map((service, index) => (
           <ServiceCard
             key={service.title}
@@ -41,4 +41,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default SectionWrapper(About, "about");
