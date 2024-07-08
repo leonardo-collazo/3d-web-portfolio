@@ -1,9 +1,36 @@
-import React from 'react'
+import { VerticalTimeline } from "react-vertical-timeline-component";
+import { motion } from "framer-motion";
+
+import { SectionWrapper } from "./SectionWrapper";
+import { ExperienceCard } from "./ExperienceCard";
+
+import { experiences } from "../constants";
+import { textVariant } from "../utils/motion";
+
+import "react-vertical-timeline-component/style.min.css";
 
 const Experience = () => {
   return (
-    <div>Experience</div>
-  )
-}
+    <>
+      <motion.h2
+        className="sectionHeadText"
+        variants={textVariant()}
+      >
+        Experience
+      </motion.h2>
 
-export default Experience
+      <div className="flex flex-col mt-20">
+        <VerticalTimeline>
+          {experiences.map((experience, index) => (
+            <ExperienceCard
+              key={experience.id}
+              experience={experience}
+            />
+          ))}
+        </VerticalTimeline>
+      </div>
+    </>
+  );
+};
+
+export default SectionWrapper(Experience, "experience");
