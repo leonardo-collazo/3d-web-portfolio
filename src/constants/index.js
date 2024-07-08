@@ -93,12 +93,9 @@ const experiences = [
     icon: cih,
     iconBg: "#000",
     date: "September 2023 - December 2023",
-    points: [
-      "The 'Process Virtualization' research group is developing a new 3D version of the MultiH.Virtual, a virtual hydraulic laboratory.",
-      "This will improve the user experience by being able to work in a 3D environment compared to the previous version which was in 2D.",
-      "We are a team of 3 students, including myself, who continue to develop the new version of MultiH.Virtual using Unity 3D and C#.",
-      "At this stage my roles in the team are to continue developing and improving the user interface and the internal lab mechanics related with the lab practices.",
-    ],
+    description: `The "Process Virtualization" research group is developing a new 3D version of the MultiH.Virtual, a virtual hydraulic laboratory. This will improve the user experience by being able to work in a 3D environment compared to the previous version which was in 2D.
+    
+    We are a team of 3 students, including myself, who continue to develop the new version of MultiH.Virtual using Unity 3D and C#. At this stage my roles in the team are to continue developing and improving the user interface and the internal lab mechanics related with the lab practices.`,
   },
   {
     id: 2,
@@ -107,12 +104,9 @@ const experiences = [
     icon: cih,
     iconBg: "#000",
     date: "February 2023 - May 2023",
-    points: [
-      "The 'Process Virtualization' research group is developing a new 3D version of the MultiH.Virtual, a virtual hydraulic laboratory.",
-      "This will improve the user experience by being able to work in a 3D environment compared to the previous version which was in 2D.",
-      "We are a team of 3 students, including myself, who continue to develop the new version of MultiH.Virtual using Unity 3D and C#.",
-      "At this stage my roles in the team are to continue developing the user interface and the internal mechanics of the lab.",
-    ],
+    description: `The "Process Virtualization" research group is developing a new 3D version of the MultiH.Virtual, a virtual hydraulic laboratory. This will improve the user experience by being able to work in a 3D environment compared to the previous version which was in 2D.
+    
+    We are a team of 3 students, including myself, who continue to develop the new version of MultiH.Virtual using Unity 3D and C#. At this stage my roles in the team are to continue developing the user interface and the internal mechanics of the lab.`,
   },
   {
     id: 1,
@@ -121,12 +115,9 @@ const experiences = [
     icon: cih,
     iconBg: "#000",
     date: "June 2022 - July 2022",
-    points: [
-      "The 'Process Virtualization' research group is developing a new 3D version of MultiH.Virtual, a virtual hydraulic laboratory.",
-      "This will improve the user experience by being able to work in a 3D environment compared to the previous version which was in 2D.",
-      "We are a team of 3 students, including myself, who started the development of the new version of MultiH.Virtual using Unity 3D and C#.",
-      "At this stage my roles in the team are to develop the user interface and the internal mechanics of the lab.",
-    ],
+    description: `The "Process Virtualization" research group is developing a new 3D version of MultiH.Virtual, a virtual hydraulic laboratory. This will improve the user experience by being able to work in a 3D environment compared to the previous version which was in 2D.
+    
+    We are a team of 3 students, including myself, who started the development of the new version of MultiH.Virtual using Unity 3D and C#. At this stage my roles in the team are to develop the user interface and the internal mechanics of the lab.`,
   },
 ];
 
