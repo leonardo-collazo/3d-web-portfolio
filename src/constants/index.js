@@ -1,6 +1,7 @@
 import {
   cih,
   angular,
+  csharp,
   css,
   git,
   html,
@@ -9,6 +10,7 @@ import {
   tailwind,
   threejs,
   typescript,
+  unity,
   carrent,
   jobit,
   tripguide,
@@ -155,7 +157,15 @@ const technologies = [
     icon: threejs,
   },
   {
-    name: "git",
+    name: "C#",
+    icon: csharp,
+  },
+  {
+    name: "Unity",
+    icon: unity,
+  },
+  {
+    name: "Git",
     icon: git,
   },
 ];
