@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { ServiceCard } from "./ServiceCard";
+import { ServiceCard } from "./Cards/ServiceCard";
 import { SectionWrapper } from "./SectionWrapper";
 
 import { services } from "../constants";
@@ -17,7 +17,7 @@ const About = () => {
       </motion.h2>
 
       <motion.p
-        className="max-w-5xl mt-4 text-lg text-secondary leading-8"
+        className="max-w-5xl mt-4 text-lg leading-8 text-secondary"
         variants={fadeIn("", "", 0.1, 1)}
       >
         Graduated with a Bachelor of Science in Information Technology, achieving a GPA of

@@ -2,7 +2,7 @@ import { VerticalTimeline } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
 
 import { SectionWrapper } from "./SectionWrapper";
-import { ExperienceCard } from "./ExperienceCard";
+import { ExperienceCard } from "./Cards/ExperienceCard";
 
 import { experiences } from "../constants";
 import { textVariant } from "../utils/motion";
