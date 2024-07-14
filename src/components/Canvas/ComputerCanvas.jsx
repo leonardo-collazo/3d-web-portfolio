@@ -9,7 +9,7 @@ const ComputerCanvas = () => {
   return (
     <Canvas
       className="!touch-pan-y"
-      frameloop="demand"
+      frameloop="always"
       shadows
       camera={{ position: [31, 0, 0], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
