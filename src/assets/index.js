@@ -17,10 +17,6 @@ import typescript from "./tech/typescript.png";
 import unity from "./tech/unity.svg";
 import threejs from "./tech/threejs.svg";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
-
 export {
   logo,
   github,
@@ -38,7 +34,4 @@ export {
   typescript,
   unity,
   threejs,
-  carrent,
-  jobit,
-  tripguide,
 };
