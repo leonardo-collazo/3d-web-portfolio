@@ -11,9 +11,6 @@ import {
   threejs,
   typescript,
   unity,
-  carrent,
-  jobit,
-  tripguide,
 } from "../assets";
 
 export const navLinks = [
@@ -170,6 +167,36 @@ const technologies = [
   },
 ];
 
+const projects = [
+  {
+    id: 3,
+    name: "Knight, monsters and arena",
+    description:
+      "3D action videogame made with Unity. It's about a knight who fights with monsters in an arena. For every monster killed you earn score and monsters decrease player's life with each hit. To regain health, a health powerup will be spawned in the arena every certain amount of time. The game overs when the player's life decreases to zero.",
+    skills: ["Game Development", "Game Design", "Unity", "C#", "3D"],
+    projectLink: "https://www.youtube.com/embed/b8Kuf-7AVrk?si=8-BPPBIMx8gCrcDN",
+    sourceCodeLink: "https://github.com/leonardo-collazo/knight-monsters-arena",
+  },
+  {
+    id: 2,
+    name: "Bea's gift",
+    description:
+      "2D video game 'endless runner' made with Unity for Android mobiles. It is about a girl who avoids different types of obstacles. The background changes every certain amount of points scored. The game ends when the girl hits an obstacle.",
+    skills: ["Game Development", "Game Design", "Unity", "C#", "3D"],
+    projectLink: "https://www.youtube.com/embed/A_MXcc4jNsI?si=gO4nuX9Gfe2-7ko8",
+    sourceCodeLink: "https://github.com/leonardo-collazo/bea-gift",
+  },
+  {
+    id: 1,
+    name: "Super 50 Bros",
+    description:
+      "A classic platformer in the style of Super Mario Bros., using a free art pack and recreated with the LOVE framework and Lua. The goal is to navigate various levels from a side perspective, where jumping onto enemies inflicts damage and jumping up into blocks typically breaks them or reveals a powerup.",
+    skills: ["Game Development", "Game Design", "LOVE Framework", "Lua", "2D"],
+    projectLink: "https://www.youtube.com/embed/qcnpv1CL_EM?si=jOeYc4kc5jDHYhcv",
+    sourceCodeLink: "",
+  },
+];
+
 const testimonials = [
   {
     testimonial:
@@ -194,75 +221,6 @@ const testimonials = [
     designation: "CTO",
     company: "456 Enterprises",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
-
-const projects = [
-  {
-    id: 3,
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    id: 2,
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    id: 1,
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
   },
 ];
 
