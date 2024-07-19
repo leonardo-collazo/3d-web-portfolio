@@ -9,10 +9,7 @@ const ComputerCanvas = () => {
   return (
     <Canvas
       className="!touch-pan-y"
-      frameloop="always"
-      shadows
       camera={{ position: [31, 0, 0], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<Loader />}>
         <OrbitControls
