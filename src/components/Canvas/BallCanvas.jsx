@@ -11,6 +11,7 @@ const BallCanvas = ({ icon }) => {
       className="!touch-pan-y"
       frameloop="demand"
       shadows
+      legacy
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<BasicLoader />}>
