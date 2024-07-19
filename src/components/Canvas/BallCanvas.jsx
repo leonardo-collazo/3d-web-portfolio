@@ -7,7 +7,10 @@ import { BasicLoader } from "../BasicLoader";
 
 const BallCanvas = ({ icon }) => {
   return (
-    <Canvas className="!touch-pan-y">
+    <Canvas
+      className="!touch-pan-y"
+      gl={{ alpha: true, antialias: true }}
+    >
       <Suspense fallback={<BasicLoader />}>
         <OrbitControls
           enableZoom={false}

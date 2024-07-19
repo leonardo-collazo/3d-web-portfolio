@@ -10,6 +10,7 @@ const ComputerCanvas = () => {
     <Canvas
       className="!touch-pan-y"
       camera={{ position: [31, 0, 0], fov: 25 }}
+      gl={{ alpha: true, antialias: true }}
     >
       <Suspense fallback={<Loader />}>
         <OrbitControls
