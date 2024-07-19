@@ -9,7 +9,9 @@ const BallCanvas = ({ icon }) => {
   return (
     <Canvas
       className="!touch-pan-y"
-      gl={{ alpha: true, antialias: true }}
+      frameloop="demand"
+      shadows
+      gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<BasicLoader />}>
         <OrbitControls
