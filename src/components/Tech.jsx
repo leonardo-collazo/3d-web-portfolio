@@ -16,6 +16,8 @@ const Tech = () => {
         Tech Skills
       </motion.h2>
 
+      {/* <BallCanvas technologies={technologies} /> */}
+
       <div className="flex flex-row flex-wrap justify-center gap-12 mt-16">
         {technologies.map(technology => (
           <div

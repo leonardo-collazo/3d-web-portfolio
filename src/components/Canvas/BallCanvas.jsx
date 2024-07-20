@@ -5,13 +5,11 @@ import { OrbitControls, Preload } from "@react-three/drei";
 import { Ball } from "../Primitives/Ball";
 import { BasicLoader } from "../BasicLoader";
 
-const BallCanvas = ({ icon }) => {
+const BallCanvas = ({ technologies, icon }) => {
   return (
     <Canvas
       className="!touch-pan-y"
-      frameloop="demand"
-      shadows
-      gl={{ preserveDrawingBuffer: true }}
+      gl={{ powerPreference: "high-performance" }}
     >
       <Suspense fallback={<BasicLoader />}>
         <OrbitControls
@@ -19,7 +17,15 @@ const BallCanvas = ({ icon }) => {
           minPolarAngle={Math.PI / 2}
           maxPolarAngle={Math.PI / 2}
         />
-        <Ball imgUrl={icon}></Ball>
+        {/* {technologies.map((tech, index) => (
+          <Ball
+            key={tech.name}
+            index={index}
+            imgUrl={tech.icon}
+          />
+        ))} */}
+
+        <Ball imgUrl={icon} />
       </Suspense>
 
       <Preload all />
