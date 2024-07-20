@@ -11,7 +11,6 @@ const ComputerCanvas = () => {
       className="!touch-pan-y"
       frameloop="demand"
       shadows
-      legacy
       camera={{ position: [31, 0, 0], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
