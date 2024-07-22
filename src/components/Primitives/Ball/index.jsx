@@ -10,18 +10,18 @@ const Ball = ({ imgUrl, position }) => {
       floatIntensity={2.5}
       position={position}
     >
-      <ambientLight intensity={0.25} />
-      <directionalLight position={[0, 0, 0.05]} />
+      <directionalLight position={[0, 0, 5]} />
 
       <mesh scale={2.75}>
         <icosahedronGeometry args={[1, 1]} />
         <meshStandardMaterial
-          color="#666"
+          color="#222"
           flatShading
         />
         <Decal
           position={[0, 0, 1]}
           rotation={[2 * Math.PI, 0, 6.25]}
+          scale={1.25}
           map={decal}
           flatShading
         />

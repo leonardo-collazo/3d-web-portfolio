@@ -2,8 +2,9 @@ import { Suspense, useEffect, useRef, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Preload } from "@react-three/drei";
 
-import { Ball } from "../Primitives/Ball";
-import { BasicLoader } from "../BasicLoader";
+import { Ball } from "../../Primitives/Ball";
+import { BasicLoader } from "../../BasicLoader";
+import { getBallCanvasPosition } from "./logic";
 
 const BallCanvas = ({ technologies }) => {
   const canvasRef = useRef(null);
@@ -24,9 +25,6 @@ const BallCanvas = ({ technologies }) => {
 
         setHeight(height);
       }
-
-      console.log("newWidth", newWidth);
-      console.log("height", height);
     };
 
     handleResize();
@@ -38,45 +36,21 @@ const BallCanvas = ({ technologies }) => {
   return (
     <Canvas
       ref={canvasRef}
-      className={`!touch-pan-y bg-gray-500`}
+      className={`!touch-pan-y mt-5`}
       style={{ height }}
       camera={{ zoom: 20 }}
       orthographic
     >
       <Suspense fallback={<BasicLoader />}>
         {technologies.map((tech, index) => {
-          let x = 0;
-          let y = 0;
-
-          if (width > 0) {
-            const ballsPerRow = Math.floor(width / 160);
-            const row = Math.floor(index / ballsPerRow);
-            const col = index % ballsPerRow;
-
-            if (width < 320) {
-              x = col * 8 - width / 250;
-              y = row * -8 + height / 44;
-            } else if (width < 480) {
-              x = col * 8 - width / 80;
-              y = row * -8 + height / 48;
-            } else if (width < 640) {
-              x = col * 8 - width / 60;
-              y = row * -8 + height / 52;
-            } else if (width < 960) {
-              x = col * 8 - width / 52;
-              y = row * -8 + height / 58;
-            } else {
-              x = col * 8 - width / 48;
-              y = row * -8 + height / 76;
-            }
-          }
+          const position = getBallCanvasPosition(index, width, height);
 
           return (
             <Ball
               key={tech.name}
               index={index}
               imgUrl={tech.icon}
-              position={[x, y, 0]}
+              position={[position.x, position.y, 0]}
             />
           );
         })}

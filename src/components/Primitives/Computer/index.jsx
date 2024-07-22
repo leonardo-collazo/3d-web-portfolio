@@ -29,9 +29,9 @@ const Computer = () => {
 
   return (
     <Float
-      speed={2.75}
-      rotationIntensity={1}
-      floatIntensity={2.75}
+      speed={2}
+      rotationIntensity={0.75}
+      floatIntensity={2}
     >
       <mesh>
         <hemisphereLight
@@ -40,11 +40,7 @@ const Computer = () => {
         />
         <spotLight
           position={[-18, 7.5, 8]}
-          angle={1}
-          penumbra={1}
           intensity={100}
-          castShadow
-          shadow-mapSize={1024}
         />
         <primitive
           object={computer.scene}
