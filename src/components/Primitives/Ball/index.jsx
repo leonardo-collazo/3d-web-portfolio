@@ -1,6 +1,6 @@
 import { Decal, Float, useTexture } from "@react-three/drei";
 
-const Ball = ({ index, imgUrl }) => {
+const Ball = ({ imgUrl, position }) => {
   const decal = useTexture(imgUrl);
 
   return (
@@ -8,6 +8,7 @@ const Ball = ({ index, imgUrl }) => {
       speed={3}
       rotationIntensity={1.25}
       floatIntensity={2.5}
+      position={position}
     >
       <ambientLight intensity={0.25} />
       <directionalLight position={[0, 0, 0.05]} />
