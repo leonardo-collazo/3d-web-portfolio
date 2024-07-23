@@ -35,11 +35,11 @@ const Computer = () => {
     >
       <mesh>
         <hemisphereLight
-          intensity={1.5}
+          intensity={2}
           groundColor="black"
         />
         <spotLight
-          position={[-18, 7.5, 8]}
+          position={[-20, 7.5, 8]}
           intensity={100}
         />
         <primitive

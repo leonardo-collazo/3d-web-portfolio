@@ -10,7 +10,7 @@ const Ball = ({ imgUrl, position }) => {
       floatIntensity={2.5}
       position={position}
     >
-      <directionalLight position={[0, 0, 5]} />
+      <directionalLight position={[0, 0, 1.25]} />
 
       <mesh scale={2.75}>
         <icosahedronGeometry args={[1, 1]} />
