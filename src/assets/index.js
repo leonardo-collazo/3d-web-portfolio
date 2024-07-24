@@ -16,6 +16,8 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import unity from "./tech/unity.svg";
 import threejs from "./tech/threejs.svg";
+import love from "./tech/love.svg";
+import lua from "./tech/lua.svg";
 
 export {
   logo,
@@ -34,4 +36,6 @@ export {
   typescript,
   unity,
   threejs,
+  love,
+  lua,
 };

@@ -1,17 +1,36 @@
+import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
 import { github } from "../../../assets";
 import { fadeIn } from "../../../utils/motion";
 
 const ProjectCard = ({ index, name, description, skills, projectLink, sourceCodeLink }) => {
+  const cardRef = useRef(null);
+
+  const [height, setHeight] = useState(0);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (cardRef.current) {
+        setHeight((cardRef.current.offsetWidth * 9) / 16);
+      }
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, [cardRef.current]);
+
   return (
     <motion.div
-      className="w-full max-w-[840px] relative p-5 border-2 border-solid border-white rounded-3xl bg-tertiary"
+      className="w-full max-w-[940px] relative p-5 border-2 border-solid border-white rounded-3xl bg-tertiary"
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}
     >
       <iframe
+        ref={cardRef}
         width="100%"
-        height="420px"
+        height={height}
         src={projectLink}
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"

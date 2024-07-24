@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <nav className="w-full h-navbar paddingX flex items-center fixed top-0 z-20 bg-primary border-b-2 border-solid border-b-white">
-      <div className="w-full flex justify-between items-center max-w-content mx-auto">
+      <div className="w-full flex justify-between items-center gap-4 max-w-content mx-auto">
         <a
           href="/#"
           className="flex items-center gap-2"
@@ -24,7 +24,7 @@ const Navbar = () => {
           <p className="text-white text-[18px] font-bold cursor-pointer">Leonardo Collazo</p>
         </a>
 
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul className="list-none hidden lg:flex lg:flex-row lg:gap-8">
           {navLinks.map(link => (
             <li key={link.title}>
               <a
@@ -37,7 +37,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className="flex flex-shrink-0 justify-end items-center sm:hidden">
+        <div className="flex flex-shrink-0 justify-end items-center lg:hidden">
           <img
             src={toggle ? close : menu}
             alt="menu icon"

@@ -21,7 +21,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
       >
         Graduated with a Bachelor of Science in Information Technology, achieving a GPA of
-        4.95/5.00. Excellent skills in software engineering, front-end and game development.
+        4.95/5.00. Excellent skills in game, front-end development and software engineering.
         Committed to continuous learning and professional growth. Proactive in finding optimal
         solutions to complex problems. Clear and frequent communication with the team, ensuring
         mutual transparency and collaboration. Versatile in the adaptation of different technologies

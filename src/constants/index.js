@@ -11,6 +11,8 @@ import {
   threejs,
   typescript,
   unity,
+  love,
+  lua,
 } from "../assets";
 
 export const navLinks = [
@@ -31,6 +33,10 @@ export const navLinks = [
     path: "#projects",
   },
   {
+    title: "Recommendations",
+    path: "#recommendations",
+  },
+  {
     title: "Contact",
     path: "#contact",
   },
@@ -38,44 +44,44 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Single Page Application (SPA) Development",
+    title: "Game Developer",
     description:
-      "Create dynamic web applications that offer a desktop-like experience using frameworks such as React, Angular, Tailwind CSS and others",
+      "Write the code that makes video games function. Implement game logic, physics, AI, and integrate graphics and sound. Use of C#, Lua or another technology to build the core functionality. Collaboration with designers and artists to ensure the game runs smoothly. Debugging and optimizing the game code for performance and stability.",
   },
   {
-    title: "Development of Reusable Components",
+    title: "Unity Engineer",
     description:
-      "Create reusable interface components that can be used in different parts of the application. Implement component libraries to improve development efficiency.",
+      "Research new methods to implement emerging technologies. Develop new features and applications using Unity. Create proof of concept and mockup software to achieve project goals. Publish to multiple platforms. Work with the QA team to ensure maximum stability, performance, and quality. Manage the release of products. Identify and resolve bottlenecks and bugs.",
   },
   {
-    title: "User Interface (UI) Development",
+    title: "C# Programmer",
     description:
-      "Create attractive and functional interfaces using HTML, CSS and JavaScript. Implement responsive designs to ensure applications work well on devices of different sizes and resolutions.",
+      "Develop new features and applications. Create proof of concept and mockup software to achieve project goals. Publish to multiple platforms. Work with the QA team to ensure maximum stability, performance, and quality. Manage the release of products.",
   },
   {
-    title: "User Experience (UX) Development",
+    title: "Game Designer",
     description:
-      "Improve the user experience by implementing usability and accessibility principles. Conduct usability tests and make adjustments based on user feedback.",
+      "Create the core concepts, mechanics, and rules of the game. Design the storyline, characters, and levels, ensuring the game is engaging and fun. Work closely with programmers and artists to bring a vision to life. Balancing game difficulty and ensuring an enjoyable user experience are essential tasks.",
   },
   {
-    title: "Animations and Interactive Effects",
+    title: "Level Designer",
     description:
-      "Implement animations and interactive effects using CSS and JavaScript to enhance the user experience. Use libraries like Framer Motion or frameworks like Tailwind CSS for advanced animations.",
+      "Construct the stages and environments in which players interact. Design the layout, challenges, and objectives for each level, ensuring a balance between difficulty and enjoyment. Work with game designers to align levels with the overall game narrative and mechanics. Playtesting and iterating on level designs to refine gameplay.",
   },
   {
-    title: "Integration with APIs and Back-End Services",
+    title: "Game Tester",
     description:
-      "Connect the user interface with back-end services using RESTful APIs and others. Handle asynchronous communication between the front-end and back-end.",
+      "Play the game extensively to identify bugs, glitches, and any issues that could impact the user experience. Write detailed reports to find often suggesting improvements. Follow test plans to ensure every aspect of the game is examined. Also perform regression testing to verify that previous issues have been resolved.",
   },
   {
-    title: "Performance Optimization",
+    title: "UI/UX Programmer",
     description:
-      "Optimize the performance of web applications to ensure fast loading times and a smooth user experience. Implement optimization techniques such as lazy loading, file minification, and efficient resource usage.",
+      "Code new and existing UI systems or tools to meet the project's design and flow. Analyze UX documents to define required features and systems. Integrate UI systems into different features. Implement and optimize UX for fluid interactions, collaborating with designers and artists.",
   },
   {
-    title: "Cross-Browser Compatibility",
+    title: "Software Developer",
     description:
-      "Ensure applications work correctly across different browsers and versions. Conduct tests and make adjustments to handle browser discrepancies.",
+      "Design, develop, test, and release new features and tools. Create proof of concept and mockup software to achieve project goals. Develop reliable, innovative, and flexible software solutions. Write tested, documented, and performant software. Work with the QA team to ensure maximum stability, performance, and quality. Manage the release of products.",
   },
   {
     title: "Version Control Implementation",
@@ -122,6 +128,34 @@ const experiences = [
 
 const technologies = [
   {
+    name: "Unity",
+    icon: unity,
+  },
+  {
+    name: "C#",
+    icon: csharp,
+  },
+  {
+    name: "LOVE",
+    icon: love,
+  },
+  {
+    name: "Lua",
+    icon: lua,
+  },
+  {
+    name: "Angular",
+    icon: angular,
+  },
+  {
+    name: "React JS",
+    icon: reactjs,
+  },
+  {
+    name: "Tailwind CSS",
+    icon: tailwind,
+  },
+  {
     name: "HTML5",
     icon: html,
   },
@@ -138,28 +172,8 @@ const technologies = [
     icon: typescript,
   },
   {
-    name: "Angular",
-    icon: angular,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
     name: "Three JS",
     icon: threejs,
-  },
-  {
-    name: "C#",
-    icon: csharp,
-  },
-  {
-    name: "Unity",
-    icon: unity,
   },
   {
     name: "Git",
