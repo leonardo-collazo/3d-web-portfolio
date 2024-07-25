@@ -183,7 +183,7 @@ const technologies = [
 
 const projects = [
   {
-    id: 3,
+    id: 7,
     name: "Knight, monsters and arena",
     description:
       "3D action videogame made with Unity. It's about a knight who fights with monsters in an arena. For every monster killed you earn score and monsters decrease player's life with each hit. To regain health, a health powerup will be spawned in the arena every certain amount of time. The game overs when the player's life decreases to zero.",
@@ -192,7 +192,7 @@ const projects = [
     sourceCodeLink: "https://github.com/leonardo-collazo/knight-monsters-arena",
   },
   {
-    id: 2,
+    id: 6,
     name: "Bea's gift",
     description:
       "2D video game 'endless runner' made with Unity for Android mobiles. It is about a girl who avoids different types of obstacles. The background changes every certain amount of points scored. The game ends when the girl hits an obstacle.",
@@ -201,12 +201,48 @@ const projects = [
     sourceCodeLink: "https://github.com/leonardo-collazo/bea-gift",
   },
   {
-    id: 1,
+    id: 5,
     name: "Super 50 Bros",
     description:
-      "A classic platformer in the style of Super Mario Bros., using a free art pack and recreated with the LOVE framework and Lua. The goal is to navigate various levels from a side perspective, where jumping onto enemies inflicts damage and jumping up into blocks typically breaks them or reveals a powerup.",
+      "A classic platformer in the style of Super Mario Bros., using a free art pack and recreated with the LOVE 2D framework and Lua. The goal is to navigate various levels from a side perspective, where jumping onto enemies inflicts damage and jumping up into blocks typically breaks them or reveals a powerup.",
     skills: ["Game Development", "Game Design", "LOVE Framework", "Lua", "2D"],
     projectLink: "https://www.youtube.com/embed/qcnpv1CL_EM?si=jOeYc4kc5jDHYhcv",
+    sourceCodeLink: "",
+  },
+  {
+    id: 4,
+    name: "Match 3",
+    description:
+      "Match-3 has taken various forms over the years and a video game similar to Candy Crush was recreated with the LOVE 2D framework and Lua. The goal of the game is to match any three tiles of the same variety by swapping any two adjacent tiles; when three or more tiles match in a line, those tiles add to the player's score and are removed from play, with new tiles coming from the ceiling to replace them.",
+    skills: ["Game Development", "Game Design", "LOVE Framework", "Lua", "2D"],
+    projectLink: "https://www.youtube.com/embed/txL_95dxFZ8?si=NaHR7n2Bel9-nHhy",
+    sourceCodeLink: "",
+  },
+  {
+    id: 3,
+    name: "Breakout",
+    description:
+      "Originally developed by Atari in 1976 and it was recreated with the LOVE 2D framework and Lua. Breakout ditched the two-player mechanic in favor of a single-player game where the player, still controlling a paddle, was tasked with eliminating a screen full of differently placed bricks of varying values by deflecting a ball back at them.",
+    skills: ["Game Development", "Game Design", "LOVE Framework", "Lua", "2D"],
+    projectLink: "https://www.youtube.com/embed/qEGUnZVks0k?si=DGwbqQGbZOGW_EWz",
+    sourceCodeLink: "",
+  },
+  {
+    id: 2,
+    name: "Flappy Bird",
+    description:
+      "A mobile game by Dong Nguyen that went viral in 2013 and it was recreated with the LOVE 2D framework and Lua. It uses a very simple but effective gameplay mechanic of avoiding pipes indefinitely by just tapping the screen, making the player's bird avatar flap its wings and move upwards slightly.",
+    skills: ["Game Development", "Game Design", "LOVE Framework", "Lua", "2D"],
+    projectLink: "https://www.youtube.com/embed/-PSYcqRnOxE?si=62QHofNRWJJDPDFZ",
+    sourceCodeLink: "",
+  },
+  {
+    id: 1,
+    name: "Pong",
+    description:
+      "Pong is a video game released in 1972 by Atari and it was recreated with LOVE 2D framework and Lua. It involves two opposing players each controlling a platform to hit a ball until one of the two players misses the ball and loses. The players are actually two artificial intelligences (AI) created by me.",
+    skills: ["Game Development", "Game Design", "LOVE Framework", "Lua", "2D"],
+    projectLink: "https://www.youtube.com/embed/Q8_gXBVcjks?si=udCqWUSQpzx8EOmd",
     sourceCodeLink: "",
   },
 ];
