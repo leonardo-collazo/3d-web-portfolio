@@ -247,7 +247,7 @@ const projects = [
   },
 ];
 
-const testimonials = [
+const recommendations = [
   {
     testimonial:
       "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
@@ -274,4 +274,4 @@ const testimonials = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects, recommendations };
