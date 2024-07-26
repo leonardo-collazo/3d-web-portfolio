@@ -4,7 +4,7 @@ import About from "./About";
 import Tech from "./Tech";
 import Experience from "./Experience";
 import Projects from "./Projects";
-import Feedbacks from "./Feedbacks";
+import Recommendations from "./Recommendations";
 import Contact from "./Contact";
 
-export { Hero, Navbar, About, Tech, Experience, Projects, Feedbacks, Contact };
+export { Hero, Navbar, About, Tech, Experience, Projects, Recommendations, Contact };

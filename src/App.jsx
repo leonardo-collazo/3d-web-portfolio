@@ -1,5 +1,14 @@
 import { Stars } from "./components/Canvas/Stars";
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Projects } from "./components/";
+import {
+  Navbar,
+  Hero,
+  About,
+  Experience,
+  Tech,
+  Projects,
+  Recommendations,
+  Contact,
+} from "./components/";
 
 const App = () => {
   return (
@@ -13,7 +22,7 @@ const App = () => {
       <Experience />
       <Tech />
       <Projects />
-      <Feedbacks />
+      <Recommendations />
 
       <div className="relative z-0">
         <Contact />
