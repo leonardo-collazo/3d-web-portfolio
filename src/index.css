@@ -6,7 +6,7 @@
 
 @layer components {
   .sectionHeadText {
-    @apply text-white font-black text-[40px] xs:text-[45px] sm:text-[50px] md:text-[55px] lg:text-[60px];
+    @apply text-[40px] xs:text-[45px] sm:text-[50px] md:text-[55px] lg:text-[60px] font-black text-white break-words;
   }
 
   .sectionsubtext {
