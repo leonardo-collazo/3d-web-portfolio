@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 import { SectionWrapper } from "./SectionWrapper";
 import { RecommendationCard } from "./Cards/RecommendationCard";
-import { fadeIn, textVariant } from "../utils/motion";
+import { textVariant } from "../utils/motion";
 import { recommendations } from "../constants";
 
 const Recommendations = () => {
@@ -30,4 +30,4 @@ const Recommendations = () => {
   );
 };
 
-export default SectionWrapper(Recommendations, "recommendations");
+export default SectionWrapper(Recommendations, "recommendations", 0.1);
