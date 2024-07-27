@@ -249,28 +249,64 @@ const projects = [
 
 const recommendations = [
   {
-    recommendation:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    id: 5,
+    recommendation: `It is a pleasure to recommend Leonardo, who has been an exceptional collaborator on our joint academic and professional journey. His ability to work in a team, along with his capacity for learning and adaptation, have been fundamental in our formation and acquisition of experience across various projects.
+    
+    Although we have not worked together on specific projects, we have shared our experiences and challenges in software development, allowing me to appreciate his approach and dedication. His diligence and perfectionism in every assigned task are noteworthy, and these qualities, along with his willingness to learn and adapt, have been key to his progress.
+    
+    In terms of technical skills, Leonardo has shown significant development in frontend technologies, although his greatest experience and passion lies in game development. The implementation of a game as a personal project demonstrates his commitment and skills in this area, particularly highlighting his use of C# and Unity, as well as his application of mathematics, mechanics, physics, and collisions in game development.
+    
+    His creative approach to problem-solving and constant pursuit of mastery in new technologies are aspects that highlight his profile as a professional. Beyond his technical skills, Leonardo stands out for his strong sense of collaboration and communication, making him valuable in any team.`,
+    name: "Jorge Haidar",
+    image:
+      "https://media.licdn.com/dms/image/D4E03AQE0L8M2yHX9sQ/profile-displayphoto-shrink_100_100/0/1702822988165?e=1727308800&v=beta&t=UfVY6yQ79NS4UPWTUUZXs-lV5BUC_YUpFwHrSsvmIdo",
+    linkedInProfile: "https://www.linkedin.com/in/jorge-haidar/",
   },
   {
-    recommendation:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    id: 4,
+    recommendation: `It's my pleasure to recommend Leonardo Collazo, who was an exceptional study partner and remains one of the most skilled programmers I've had the pleasure to work with. I collaborated closely with him on various application development projects during our Computer Engineering studies, utilizing technologies such as Java, PrimeFaces, JSF, Spring Boot, PostgreSQL. I've witnessed firsthand his proficiency and ease with these technologies.
+    Additionally, Leonardo is passionate about 3D development and has independently created several incredible games as personal projects.
+    His dedication to mastering new technologies and his creative approach to problem-solving were evident in every project we undertook together. Beyond technical skills, Leonardo excels in teamwork, demonstrating strong communication and collaboration abilities.`,
+    name: "Lennis Batista",
+    image:
+      "https://media.licdn.com/dms/image/D4D03AQFpkXHwejxLiQ/profile-displayphoto-shrink_100_100/0/1714678792838?e=1727308800&v=beta&t=ynekansQgaA0bu9KDUeQ74XIkrPvcl15CydWLA7pi5s",
+    linkedInProfile: "https://www.linkedin.com/in/lennis-batista-b45207271/",
   },
   {
-    recommendation:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    id: 3,
+    recommendation: `I had the privilege of studying with Leonardo during our university years in computer engineering. He consistently demonstrated exceptional skills in software development and academic excellence.
+    We collaborated at the Hydraulic Research Center (CIH) on a project to develop a 3D virtual laboratory using Unity. Leonardo was responsible for user interfaces, user experience, and 3D gameplay mechanics. His ability to tackle these technical challenges was crucial to the team's success, resulting in outstanding achievements.
+    Leonardo consistently brings innovative solutions and technical proficiency to his work. He will undoubtedly contribute positively to any organization.`,
+    name: "Alejandro Sainz",
+    image:
+      "https://media.licdn.com/dms/image/D5635AQFMFVwaPfIh4g/profile-framedphoto-shrink_100_100/0/1709785451018?e=1722718800&v=beta&t=a6vFlEKwayWqI_0lc951e-cGCaYxSKI0Y5Gxfihy-NU",
+    linkedInProfile: "https://www.linkedin.com/in/alejandro-sainz-4361b5271/",
+  },
+  {
+    id: 2,
+    recommendation: `I had the pleasure of studying with Leonardo Collazo for four years in the Software Engineering program at university. He possesses strong skills in front-end development, specifically with Angular, React, TypeScript, and Tailwind CSS. His thesis project, a 3D Virtual Hydraulics Lab developed using Unity and C#, is a testament to his technical expertise and innovative thinking.
+    
+    Leonardo was consistently one of the top students in our class, excelling in both the theoretical and practical aspects of software engineering. His ability to grasp complex concepts quickly and apply them effectively was evident through his high grades and outstanding project work. He was always willing to share his knowledge and help his peers, which made him a highly respected member of our cohort.
+    
+    I can confidently say he is a development guru whose work is consistently outstanding. He is a highly skilled, experienced, and helpful professional with a remarkably positive attitude. Leonardo's commitment to excellence, combined with his technical prowess and collaborative spirit, makes him an invaluable asset to any software engineering team. His work is not only of high quality but also demonstrates innovation and a deep understanding of the field.`,
+    name: "Rachel Lopez",
+    image:
+      "https://media.licdn.com/dms/image/D4E03AQEa8Y-zx1sbUA/profile-displayphoto-shrink_100_100/0/1704234664306?e=1727308800&v=beta&t=1LJtP0SHmOjGRFbHlmwLM4iq8Cj2XbSdc3D8OIacUEU",
+    linkedInProfile: "https://www.linkedin.com/in/rachel-l-0883091b3/",
+  },
+  {
+    id: 1,
+    recommendation: `I met Leonardo at university. From the beginning he showed great dedication and perseverance, obtaining one of the best averages in graduation. He is always eager to learn and constantly improving himself.
+    
+    It was a pleasure to work with him on the project that would later become his thesis, related to the operation and simulation of a hydraulics laboratory. At the beginning we were a team of 5 students in which Leonardo was in charge of the design and implementation of the user interface, as well as other components of the system.
+    
+    After finishing university he has focused on front-end development, learning new technologies like Angular and working on several personal projects.
+    
+    I completely recommend him for any job.`,
+    name: "Jorge Padron",
+    image:
+      "https://media.licdn.com/dms/image/D4D03AQHd5p1KzsKREg/profile-displayphoto-shrink_100_100/0/1718235706463?e=1727308800&v=beta&t=TNK_XR8OsKwL9LQ_r3olGE6bMPGh-IESgKsM23jn97U",
+    linkedInProfile: "https://www.linkedin.com/in/jpadronp/",
   },
 ];
 
