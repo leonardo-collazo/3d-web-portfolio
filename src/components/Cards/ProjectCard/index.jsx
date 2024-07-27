@@ -2,7 +2,14 @@ import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
 import { github } from "../../../assets";
-import { fadeIn } from "../../../utils/motion";
+import {
+  toUp,
+  springAnimation,
+  animationDelay,
+  animationDuration,
+  aspectRatio,
+  fadeIn,
+} from "../../../utils/motion";
 
 const ProjectCard = ({ index, name, description, skills, projectLink, sourceCodeLink }) => {
   const cardRef = useRef(null);
@@ -12,7 +19,7 @@ const ProjectCard = ({ index, name, description, skills, projectLink, sourceCode
   useEffect(() => {
     const handleResize = () => {
       if (cardRef.current) {
-        setHeight((cardRef.current.offsetWidth * 9) / 16);
+        setHeight(cardRef.current.offsetWidth * aspectRatio);
       }
     };
 
@@ -25,7 +32,7 @@ const ProjectCard = ({ index, name, description, skills, projectLink, sourceCode
   return (
     <motion.div
       className="w-full max-w-[940px] relative p-5 border-2 border-solid border-white rounded-3xl bg-tertiary"
-      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+      variants={fadeIn(toUp, springAnimation, index * animationDelay, animationDuration)}
     >
       <iframe
         ref={cardRef}
@@ -42,17 +49,17 @@ const ProjectCard = ({ index, name, description, skills, projectLink, sourceCode
         <div className="flex justify-start items-center gap-4">
           <h3 className="text-2xl font-bold text-white">{name}</h3>
           {sourceCodeLink ? (
-            <button
-              className="w-10 h-10 flex justify-center items-center p-1 rounded-full black-gradient cursor-pointer"
-              onClick={() => window.open(sourceCodeLink, "_blank")}
-              type="button"
+            <a
+              href={sourceCodeLink}
+              target="_blank"
+              className="w-10 min-w-10 h-10 min-h-10 flex justify-center items-center p-1 rounded-full black-gradient"
             >
               <img
                 className="w-full h-full object-contain"
                 src={github}
                 alt="GitHub repository link"
               />
-            </button>
+            </a>
           ) : (
             <></>
           )}

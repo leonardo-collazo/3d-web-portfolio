@@ -1,21 +1,34 @@
+const toLeft = "left";
+const toRight = "right";
+const toUp = "up";
+const toDown = "down";
+
+const springAnimation = "spring";
+const tweenAnimation = "tween";
+
+const animationDelay = 0.5;
+const animationDuration = 0.75;
+
+const aspectRatio = 9 / 16;
+
 const getPositionForFadeIn = direction => {
   let x = 0;
   let y = 0;
 
   switch (direction) {
-    case "left":
+    case toLeft:
       x = 100;
       break;
 
-    case "right":
+    case toRight:
       x = -100;
       break;
 
-    case "up":
+    case toUp:
       y = 100;
       break;
 
-    case "down":
+    case toDown:
       y = -100;
       break;
   }
@@ -28,19 +41,19 @@ const getPositionForSlideIn = direction => {
   let y = 0;
 
   switch (direction) {
-    case "left":
+    case toLeft:
       x = "-100%";
       break;
 
-    case "right":
+    case toRight:
       x = "100%";
       break;
 
-    case "up":
+    case toUp:
       y = "100%";
       break;
 
-    case "down":
+    case toDown:
       y = "100%";
       break;
   }
@@ -48,7 +61,7 @@ const getPositionForSlideIn = direction => {
   return { x, y };
 };
 
-export const textVariant = delay => {
+const textVariant = delay => {
   return {
     hidden: {
       y: -50,
@@ -58,7 +71,7 @@ export const textVariant = delay => {
       y: 0,
       opacity: 1,
       transition: {
-        type: "spring",
+        type: springAnimation,
         duration: 1.25,
         delay: delay,
       },
@@ -66,7 +79,7 @@ export const textVariant = delay => {
   };
 };
 
-export const fadeIn = (direction, type, delay, duration) => {
+const fadeIn = (direction, type, delay, duration) => {
   const position = getPositionForFadeIn(direction);
 
   return {
@@ -88,7 +101,7 @@ export const fadeIn = (direction, type, delay, duration) => {
   };
 };
 
-export const zoomIn = (delay, duration) => {
+const zoomIn = (delay, duration) => {
   return {
     hidden: {
       scale: 0,
@@ -98,7 +111,7 @@ export const zoomIn = (delay, duration) => {
       scale: 1,
       opacity: 1,
       transition: {
-        type: "tween",
+        type: tweenAnimation,
         delay: delay,
         duration: duration,
         ease: "easeOut",
@@ -107,7 +120,7 @@ export const zoomIn = (delay, duration) => {
   };
 };
 
-export const slideIn = (direction, type, delay, duration) => {
+const slideIn = (direction, type, delay, duration) => {
   const position = getPositionForSlideIn(direction);
 
   return {
@@ -127,7 +140,7 @@ export const slideIn = (direction, type, delay, duration) => {
   };
 };
 
-export const staggerContainer = (staggerChildren, delayChildren) => {
+const staggerContainer = (staggerChildren, delayChildren) => {
   return {
     hidden: {},
     show: {
@@ -137,4 +150,21 @@ export const staggerContainer = (staggerChildren, delayChildren) => {
       },
     },
   };
+};
+
+export {
+  toLeft,
+  toRight,
+  toUp,
+  toDown,
+  springAnimation,
+  tweenAnimation,
+  animationDelay,
+  animationDuration,
+  aspectRatio,
+  textVariant,
+  fadeIn,
+  zoomIn,
+  slideIn,
+  staggerContainer,
 };
