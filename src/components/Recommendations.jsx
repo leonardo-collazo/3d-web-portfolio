@@ -30,4 +30,4 @@ const Recommendations = () => {
   );
 };
 
-export default SectionWrapper(Recommendations, "recommendations", 0.1);
+export default SectionWrapper(Recommendations, "recommendations", 0.05);
