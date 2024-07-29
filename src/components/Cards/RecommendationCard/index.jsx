@@ -21,7 +21,7 @@ const RecommendationCard = ({ index, recommendation, name, image, linkedInProfil
         <a
           href={linkedInProfile}
           target="_blank"
-          className="text-base font-medium text-white"
+          className="text-lg font-medium text-white"
         >
           <span className="blue-text-gradient">@ </span>
           <span className="hover:blue-text-gradient">{name}</span>
@@ -34,7 +34,7 @@ const RecommendationCard = ({ index, recommendation, name, image, linkedInProfil
           <img
             src={image}
             alt={name}
-            className="w-12 h-12 object-cover rounded-full"
+            className="w-14 h-14 object-cover rounded-full"
           />
         </a>
       </div>
