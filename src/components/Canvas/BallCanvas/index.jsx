@@ -4,7 +4,7 @@ import { Preload } from "@react-three/drei";
 
 import { Ball } from "../../Primitives/Ball";
 import { BasicLoader } from "../../BasicLoader";
-import { getBallCanvasPosition } from "./logic";
+import { getBallXYPosition } from "./logic";
 
 const BallCanvas = ({ technologies }) => {
   const canvasRef = useRef(null);
@@ -43,7 +43,7 @@ const BallCanvas = ({ technologies }) => {
     >
       <Suspense fallback={<BasicLoader />}>
         {technologies.map((tech, index) => {
-          const position = getBallCanvasPosition(index, width, height);
+          const position = getBallXYPosition(index, width, height);
 
           return (
             <Ball

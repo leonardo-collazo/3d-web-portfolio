@@ -1,4 +1,4 @@
-const getBallCanvasPosition = (index, width, height) => {
+const getBallXYPosition = (index, width, height) => {
   let x = 0;
   let y = 0;
 
@@ -28,4 +28,4 @@ const getBallCanvasPosition = (index, width, height) => {
   return { x, y };
 };
 
-export { getBallCanvasPosition };
+export { getBallXYPosition };
