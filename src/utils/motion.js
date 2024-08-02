@@ -1,13 +1,18 @@
+const inPlace = "";
 const toLeft = "left";
 const toRight = "right";
 const toUp = "up";
 const toDown = "down";
 
-const springAnimation = "spring";
-const tweenAnimation = "tween";
+const noTransition = "";
+const springTransition = "spring";
+const tweenTransition = "tween";
 
-const animationDelay = 0.5;
-const animationDuration = 0.75;
+const cardAnimationDelay = 0.5;
+const cardAnimationDuration = 0.75;
+
+const sectionAnimationDelay = 0.1;
+const sectionAnimationDuration = 1;
 
 const aspectRatio = 9 / 16;
 
@@ -71,7 +76,7 @@ const textVariant = delay => {
       y: 0,
       opacity: 1,
       transition: {
-        type: springAnimation,
+        type: springTransition,
         duration: 1.25,
         delay: delay,
       },
@@ -111,7 +116,7 @@ const zoomIn = (delay, duration) => {
       scale: 1,
       opacity: 1,
       transition: {
-        type: tweenAnimation,
+        type: tweenTransition,
         delay: delay,
         duration: duration,
         ease: "easeOut",
@@ -153,14 +158,18 @@ const staggerContainer = (staggerChildren, delayChildren) => {
 };
 
 export {
+  inPlace,
   toLeft,
   toRight,
   toUp,
   toDown,
-  springAnimation,
-  tweenAnimation,
-  animationDelay,
-  animationDuration,
+  noTransition,
+  springTransition,
+  tweenTransition,
+  cardAnimationDelay,
+  cardAnimationDuration,
+  sectionAnimationDelay,
+  sectionAnimationDuration,
   aspectRatio,
   textVariant,
   fadeIn,

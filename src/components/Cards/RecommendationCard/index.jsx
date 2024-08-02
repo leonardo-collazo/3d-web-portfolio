@@ -2,16 +2,21 @@ import { motion } from "framer-motion";
 
 import {
   toRight,
-  springAnimation,
-  animationDelay,
-  animationDuration,
+  springTransition,
+  cardAnimationDelay,
+  cardAnimationDuration,
   fadeIn,
 } from "../../../utils/motion";
 
 const RecommendationCard = ({ index, recommendation, name, image, linkedInProfile }) => {
   return (
     <motion.div
-      variants={fadeIn(toRight, springAnimation, index * animationDelay, animationDuration)}
+      variants={fadeIn(
+        toRight,
+        springTransition,
+        index * cardAnimationDelay,
+        cardAnimationDuration
+      )}
       className="w-full p-10 rounded-3xl bg-black"
     >
       <p className="text-5xl font-black text-white">"</p>

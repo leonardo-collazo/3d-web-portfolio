@@ -6,6 +6,9 @@ import { SectionWrapper } from "./SectionWrapper";
 import { technologies } from "../constants/";
 import { textVariant } from "../utils/motion";
 
+const sectionId = "tech";
+const contentAmount = 0.25;
+
 const Tech = () => {
   return (
     <>
@@ -21,4 +24,4 @@ const Tech = () => {
   );
 };
 
-export default SectionWrapper(Tech, "tech", 0.25);
+export default SectionWrapper(Tech, sectionId, contentAmount);

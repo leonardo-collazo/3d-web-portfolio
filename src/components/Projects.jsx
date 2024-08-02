@@ -3,7 +3,17 @@ import { motion } from "framer-motion";
 import { SectionWrapper } from "./SectionWrapper";
 import { ProjectCard } from "./Cards/ProjectCard";
 import { projects } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
+import {
+  fadeIn,
+  textVariant,
+  inPlace,
+  noTransition,
+  sectionAnimationDelay,
+  sectionAnimationDuration,
+} from "../utils/motion";
+
+const sectionId = "projects";
+const contentAmount = 0.08;
 
 const Projects = () => {
   return (
@@ -18,7 +28,7 @@ const Projects = () => {
       <div className="w-full flex">
         <motion.p
           className="max-w-5xl mt-4 text-lg leading-8 text-secondary"
-          variants={fadeIn("", "", 0.1, 1)}
+          variants={fadeIn(inPlace, noTransition, sectionAnimationDelay, sectionAnimationDuration)}
         >
           The following projects showcase my skills and experience. Each project is briefly
           described and includes links to code repositories. They reflect my ability to solve
@@ -39,4 +49,4 @@ const Projects = () => {
   );
 };
 
-export default SectionWrapper(Projects, "projects", 0.08);
+export default SectionWrapper(Projects, sectionId, contentAmount);

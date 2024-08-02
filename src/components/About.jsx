@@ -4,7 +4,17 @@ import { ServiceCard } from "./Cards/ServiceCard";
 import { SectionWrapper } from "./SectionWrapper";
 
 import { services } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
+import {
+  fadeIn,
+  textVariant,
+  inPlace,
+  noTransition,
+  sectionAnimationDelay,
+  sectionAnimationDuration,
+} from "../utils/motion";
+
+const sectionId = "about";
+const contentAmount = 0.1;
 
 const About = () => {
   return (
@@ -18,7 +28,7 @@ const About = () => {
 
       <motion.p
         className="max-w-5xl mt-4 text-lg leading-8 text-secondary"
-        variants={fadeIn("", "", 0.1, 1)}
+        variants={fadeIn(inPlace, noTransition, sectionAnimationDelay, sectionAnimationDuration)}
       >
         Graduated with a Bachelor of Science in Information Technology, achieving a GPA of
         4.95/5.00. Excellent skills in game, front-end development and software engineering.
@@ -41,4 +51,4 @@ const About = () => {
   );
 };
 
-export default SectionWrapper(About, "about", 0.1);
+export default SectionWrapper(About, sectionId, contentAmount);

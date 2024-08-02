@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import { github } from "../../../assets";
 import {
   toUp,
-  springAnimation,
-  animationDelay,
-  animationDuration,
+  springTransition,
+  cardAnimationDelay,
+  cardAnimationDuration,
   aspectRatio,
   fadeIn,
 } from "../../../utils/motion";
@@ -32,7 +32,7 @@ const ProjectCard = ({ index, name, description, skills, projectLink, sourceCode
   return (
     <motion.div
       className="w-full max-w-[940px] relative p-5 border-2 border-solid border-white rounded-3xl bg-tertiary"
-      variants={fadeIn(toUp, springAnimation, index * animationDelay, animationDuration)}
+      variants={fadeIn(toUp, springTransition, index * cardAnimationDelay, cardAnimationDuration)}
     >
       <iframe
         ref={cardRef}
