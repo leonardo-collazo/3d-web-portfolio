@@ -16,7 +16,7 @@ const Hero = () => {
             Hi, I'm <span className="text-hero-header">Leonardo</span>
           </h1>
           <p className="mt-2 text-[16px] xs:text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] font-medium text-white-100">
-            Game Developer | Software Engineer | Front-End Developer
+            Software Engineer | Game Developer | Mechanics | Physics | UI/UX Programmer
           </p>
         </div>
       </div>
