@@ -5,6 +5,12 @@ import close from "./close.svg";
 
 import cih from "./company/cih.jpg";
 
+import alejandroSainz from "./photos/alejandroSainz.jpeg";
+import jorgeHaidar from "./photos/jorgeHaidar.jpeg";
+import jorgePadron from "./photos/jorgePadron.jpeg";
+import lennisBatista from "./photos/lennisBatista.jpeg";
+import rachelLopez from "./photos/rachelLopez.jpeg";
+
 import angular from "./tech/angular.svg";
 import csharp from "./tech/csharp.svg";
 import css from "./tech/css.png";
@@ -25,6 +31,11 @@ export {
   menu,
   close,
   cih,
+  alejandroSainz,
+  jorgeHaidar,
+  jorgePadron,
+  lennisBatista,
+  rachelLopez,
   angular,
   csharp,
   css,

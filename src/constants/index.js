@@ -1,5 +1,10 @@
 import {
   cih,
+  alejandroSainz,
+  jorgeHaidar,
+  jorgePadron,
+  lennisBatista,
+  rachelLopez,
   angular,
   csharp,
   css,
@@ -258,8 +263,7 @@ const recommendations = [
     
     His creative approach to problem-solving and constant pursuit of mastery in new technologies are aspects that highlight his profile as a professional. Beyond his technical skills, Leonardo stands out for his strong sense of collaboration and communication, making him valuable in any team.`,
     name: "Jorge Haidar",
-    image:
-      "https://media.licdn.com/dms/image/D4E03AQE0L8M2yHX9sQ/profile-displayphoto-shrink_100_100/0/1702822988165?e=1727308800&v=beta&t=UfVY6yQ79NS4UPWTUUZXs-lV5BUC_YUpFwHrSsvmIdo",
+    image: jorgeHaidar,
     linkedInProfile: "https://www.linkedin.com/in/jorge-haidar/",
   },
   {
@@ -268,8 +272,7 @@ const recommendations = [
     Additionally, Leonardo is passionate about 3D development and has independently created several incredible games as personal projects.
     His dedication to mastering new technologies and his creative approach to problem-solving were evident in every project we undertook together. Beyond technical skills, Leonardo excels in teamwork, demonstrating strong communication and collaboration abilities.`,
     name: "Lennis Batista",
-    image:
-      "https://media.licdn.com/dms/image/D4D03AQFpkXHwejxLiQ/profile-displayphoto-shrink_100_100/0/1714678792838?e=1727308800&v=beta&t=ynekansQgaA0bu9KDUeQ74XIkrPvcl15CydWLA7pi5s",
+    image: lennisBatista,
     linkedInProfile: "https://www.linkedin.com/in/lennis-batista-b45207271/",
   },
   {
@@ -278,8 +281,7 @@ const recommendations = [
     We collaborated at the Hydraulic Research Center (CIH) on a project to develop a 3D virtual laboratory using Unity. Leonardo was responsible for user interfaces, user experience, and 3D gameplay mechanics. His ability to tackle these technical challenges was crucial to the team's success, resulting in outstanding achievements.
     Leonardo consistently brings innovative solutions and technical proficiency to his work. He will undoubtedly contribute positively to any organization.`,
     name: "Alejandro Sainz",
-    image:
-      "https://media.licdn.com/dms/image/D5635AQFMFVwaPfIh4g/profile-framedphoto-shrink_100_100/0/1709785451018?e=1722718800&v=beta&t=a6vFlEKwayWqI_0lc951e-cGCaYxSKI0Y5Gxfihy-NU",
+    image: alejandroSainz,
     linkedInProfile: "https://www.linkedin.com/in/alejandro-sainz-4361b5271/",
   },
   {
@@ -290,8 +292,7 @@ const recommendations = [
     
     I can confidently say he is a development guru whose work is consistently outstanding. He is a highly skilled, experienced, and helpful professional with a remarkably positive attitude. Leonardo's commitment to excellence, combined with his technical prowess and collaborative spirit, makes him an invaluable asset to any software engineering team. His work is not only of high quality but also demonstrates innovation and a deep understanding of the field.`,
     name: "Rachel Lopez",
-    image:
-      "https://media.licdn.com/dms/image/D4E03AQEa8Y-zx1sbUA/profile-displayphoto-shrink_100_100/0/1704234664306?e=1727308800&v=beta&t=1LJtP0SHmOjGRFbHlmwLM4iq8Cj2XbSdc3D8OIacUEU",
+    image: rachelLopez,
     linkedInProfile: "https://www.linkedin.com/in/rachel-l-0883091b3/",
   },
   {
@@ -304,8 +305,7 @@ const recommendations = [
     
     I completely recommend him for any job.`,
     name: "Jorge Padron",
-    image:
-      "https://media.licdn.com/dms/image/D4D03AQHd5p1KzsKREg/profile-displayphoto-shrink_100_100/0/1718235706463?e=1727308800&v=beta&t=TNK_XR8OsKwL9LQ_r3olGE6bMPGh-IESgKsM23jn97U",
+    image: jorgePadron,
     linkedInProfile: "https://www.linkedin.com/in/jpadronp/",
   },
 ];
