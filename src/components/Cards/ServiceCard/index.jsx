@@ -28,7 +28,7 @@ const ServiceCard = ({ index, title, description }) => {
           cardAnimationDuration
         )}
       >
-        <div className="min-h-[400px] flex flex-col justify-start items-center gap-4 px-6 py-8 rounded-[20px] bg-tertiary">
+        <div className="min-h-[400px] flex flex-col justify-start items-center gap-4 px-4 py-8 rounded-[20px] bg-tertiary">
           <h3 className="text-[20px] font-bold leading-7 text-center text-white">{title}</h3>
           <p className="text-base font-normal leading-6 text-white">{description}</p>
         </div>
