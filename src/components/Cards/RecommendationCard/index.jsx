@@ -17,10 +17,12 @@ const RecommendationCard = ({ index, recommendation, name, image, linkedInProfil
         index * cardAnimationDelay,
         cardAnimationDuration
       )}
-      className="w-full p-10 rounded-3xl bg-black"
+      className="w-full px-5 py-8 rounded-3xl bg-black"
     >
       <p className="text-5xl font-black text-white">"</p>
-      <p className="text-lg tracking-wider text-white whitespace-pre-line">{recommendation}</p>
+      <p className="text-sm xs:text-base sm:text-lg tracking-wider text-white whitespace-pre-line">
+        {recommendation}
+      </p>
 
       <div className="flex justify-start items-center gap-10 mt-7">
         <a

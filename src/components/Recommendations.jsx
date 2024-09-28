@@ -11,7 +11,7 @@ const contentAmount = 0.05;
 const Recommendations = () => {
   return (
     <div className="rounded-[20px] bg-black-100">
-      <div className="min-h-[300px] px-6 sm:px-16 py-8 rounded-2xl bg-tertiary">
+      <div className="min-h-[300px] px-6 sm:px-12 py-8 rounded-2xl bg-tertiary">
         <motion.h2
           className="sectionHeadText"
           variants={textVariant()}
@@ -20,7 +20,7 @@ const Recommendations = () => {
         </motion.h2>
       </div>
 
-      <div className="flex flex-col gap-7 -mt-28 xs:-mt-24 sm:-mt-20 lg:-mt-32 pb-14 paddingX">
+      <div className="flex flex-col gap-7 -mt-28 xs:-mt-24 sm:-mt-20 lg:-mt-32 pb-14 px-4 sm:px-6">
         {recommendations.map((recommendation, index) => (
           <RecommendationCard
             key={recommendation.id}
