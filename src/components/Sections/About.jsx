@@ -1,9 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { ServiceCard } from "./Cards/ServiceCard";
-import { SectionWrapper } from "./SectionWrapper";
+import { ServiceCard } from "../Cards/ServiceCard";
+import { SectionWrapper } from "../SectionWrapper";
 
-import { services } from "../constants";
+import { services } from "../../constants";
 import {
   fadeIn,
   textVariant,
@@ -11,7 +11,7 @@ import {
   noTransition,
   sectionAnimationDelay,
   sectionAnimationDuration,
-} from "../utils/motion";
+} from "../../utils/motion";
 
 const sectionId = "about";
 const contentAmount = 0.1;
@@ -30,12 +30,11 @@ const About = () => {
         className="max-w-5xl mt-4 text-lg leading-8 text-secondary"
         variants={fadeIn(inPlace, noTransition, sectionAnimationDelay, sectionAnimationDuration)}
       >
-        Graduated with a Bachelor of Science in Information Technology, achieving a GPA of
-        4.95/5.00. Excellent skills in game, front-end development and software engineering.
-        Committed to continuous learning and professional growth. Proactive in finding optimal
-        solutions to complex problems. Clear and frequent communication with the team, ensuring
+        Graduated with a Bachelor of Science in IT, achieving a GPA of 4.95/5.00. Over 3 years of
+        experience in software engineering, game development & web development. Excellent skills in
+        problem-solving & troubleshooting. Clear and frequent communication with the team, ensuring
         mutual transparency and collaboration. Versatile in the adaptation of different technologies
-        and development tools.
+        and development tools. Committed to continuous learning and professional growth.
       </motion.p>
 
       <div className="flex flex-wrap justify-center 2lg:justify-start gap-10 mt-16">

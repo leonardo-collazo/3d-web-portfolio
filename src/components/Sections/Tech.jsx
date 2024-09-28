@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
-import { BallCanvas } from "./Canvas/BallCanvas";
-import { SectionWrapper } from "./SectionWrapper";
+import { BallCanvas } from "../Canvas/BallCanvas";
+import { SectionWrapper } from "../SectionWrapper";
 
-import { technologies } from "../constants/";
-import { textVariant } from "../utils/motion";
+import { technologies } from "../../constants";
+import { textVariant } from "../../utils/motion";
 
 const sectionId = "tech";
 const contentAmount = 0.25;

@@ -2,15 +2,15 @@ import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
-import { Earth } from "./Canvas/Earth";
-import { SectionWrapper } from "./SectionWrapper";
+import { Earth } from "../Canvas/Earth";
+import { SectionWrapper } from "../SectionWrapper";
 import {
   slideIn,
   toLeft,
   tweenTransition,
   sectionAnimationDelay,
   sectionAnimationDuration,
-} from "../utils/motion";
+} from "../../utils/motion";
 
 const sectionId = "contact";
 const contentAmount = 0.1;

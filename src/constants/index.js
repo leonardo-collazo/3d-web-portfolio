@@ -49,49 +49,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Game Developer",
+    title: "💻 Software Engineer 💻",
     description:
-      "Write the code that makes video games function. Implement game logic, physics, AI, and integrate graphics and sound. Use of C#, Lua or another technology to build the core functionality. Collaboration with designers and artists to ensure the game runs smoothly. Debugging and optimizing the game code for performance and stability.",
+      "As a Software Engineer, I specialize in designing and building efficient, reliable software solutions. My expertise lies in understanding user needs and transforming them into robust systems using the latest technologies. I focus on crafting scalable code that is easy to maintain, ensuring long-term stability and performance. Whether it's creating custom applications or improving existing software, I am passionate about solving complex problems.",
   },
   {
-    title: "Unity Engineer",
+    title: "🎮 Game Programmer 🎮",
     description:
-      "Research new methods to implement emerging technologies. Develop new features and applications using Unity. Create proof of concept and mockup software to achieve project goals. Publish to multiple platforms. Work with the QA team to ensure maximum stability, performance, and quality. Manage the release of products. Identify and resolve bottlenecks and bugs.",
+      "As a Game Programmer, I develop engaging gameplay mechanics, immersive environments, and compelling storylines. I bring creativity and precision to game development, blending technical skills with a passion for interactive experiences. My experience extends from prototyping game ideas to refining complex features, always with an eye for player satisfaction. Whether it's a casual mobile game or a large-scale project, I strive to create experiences that captivate and entertain.",
   },
   {
-    title: "C# Programmer",
+    title: "🌐 Full-Stack Developer 🌐",
     description:
-      "Develop new features and applications. Create proof of concept and mockup software to achieve project goals. Publish to multiple platforms. Work with the QA team to ensure maximum stability, performance, and quality. Manage the release of products.",
-  },
-  {
-    title: "Game Designer",
-    description:
-      "Create the core concepts, mechanics, and rules of the game. Design the storyline, characters, and levels, ensuring the game is engaging and fun. Work closely with programmers and artists to bring a vision to life. Balancing game difficulty and ensuring an enjoyable user experience are essential tasks.",
-  },
-  {
-    title: "Level Designer",
-    description:
-      "Construct the stages and environments in which players interact. Design the layout, challenges, and objectives for each level, ensuring a balance between difficulty and enjoyment. Work with game designers to align levels with the overall game narrative and mechanics. Playtesting and iterating on level designs to refine gameplay.",
-  },
-  {
-    title: "Game Tester",
-    description:
-      "Play the game extensively to identify bugs, glitches, and any issues that could impact the user experience. Write detailed reports to find often suggesting improvements. Follow test plans to ensure every aspect of the game is examined. Also perform regression testing to verify that previous issues have been resolved.",
-  },
-  {
-    title: "UI/UX Programmer",
-    description:
-      "Code new and existing UI systems or tools to meet the project's design and flow. Analyze UX documents to define required features and systems. Integrate UI systems into different features. Implement and optimize UX for fluid interactions, collaborating with designers and artists.",
-  },
-  {
-    title: "Software Developer",
-    description:
-      "Design, develop, test, and release new features and tools. Create proof of concept and mockup software to achieve project goals. Develop reliable, innovative, and flexible software solutions. Write tested, documented, and performant software. Work with the QA team to ensure maximum stability, performance, and quality. Manage the release of products.",
-  },
-  {
-    title: "Version Control Implementation",
-    description:
-      "Use version control systems like Git and GitHub to manage source code and collaborate with other developers. Maintain a history of changes and facilitate collaboration on projects.",
+      "As a Full-Stack Developer, I manage both front-end and back-end development to create fully-functional and visually appealing web applications. My work involves crafting responsive, user-friendly interfaces and ensuring the server-side logic supports seamless operation. From database management to API integration, I handle the full spectrum of development to bring ideas to life. My aim is to deliver comprehensive, high-quality solutions tailored to meet specific business needs.",
   },
 ];
 

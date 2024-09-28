@@ -1,11 +1,11 @@
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
 
-import { SectionWrapper } from "./SectionWrapper";
-import { ExperienceCard } from "./Cards/ExperienceCard";
+import { SectionWrapper } from "../SectionWrapper";
+import { ExperienceCard } from "../Cards/ExperienceCard";
 
-import { experiences } from "../constants";
-import { textVariant } from "../utils/motion";
+import { experiences } from "../../constants";
+import { textVariant } from "../../utils/motion";
 
 import "react-vertical-timeline-component/style.min.css";
 

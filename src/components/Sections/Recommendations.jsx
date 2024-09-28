@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 
-import { SectionWrapper } from "./SectionWrapper";
-import { RecommendationCard } from "./Cards/RecommendationCard";
-import { textVariant } from "../utils/motion";
-import { recommendations } from "../constants";
+import { SectionWrapper } from "../SectionWrapper";
+import { RecommendationCard } from "../Cards/RecommendationCard";
+import { textVariant } from "../../utils/motion";
+import { recommendations } from "../../constants";
 
 const sectionId = "recommendations";
 const contentAmount = 0.05;

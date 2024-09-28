@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 
-import { SectionWrapper } from "./SectionWrapper";
-import { ProjectCard } from "./Cards/ProjectCard";
-import { projects } from "../constants";
+import { SectionWrapper } from "../SectionWrapper";
+import { ProjectCard } from "../Cards/ProjectCard";
+import { projects } from "../../constants";
 import {
   fadeIn,
   textVariant,
@@ -10,7 +10,7 @@ import {
   noTransition,
   sectionAnimationDelay,
   sectionAnimationDuration,
-} from "../utils/motion";
+} from "../../utils/motion";
 
 const sectionId = "projects";
 const contentAmount = 0.08;

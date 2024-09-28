@@ -8,7 +8,7 @@ import {
   Projects,
   Recommendations,
   Contact,
-} from "./components/";
+} from "./components/Sections";
 
 const App = () => {
   return (
